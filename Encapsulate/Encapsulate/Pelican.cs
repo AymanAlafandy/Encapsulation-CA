@@ -10,12 +10,13 @@ namespace Encapsulate
     {
         public bool IsCementMixer { get; set; }
         public Pelican() : base() { }
-        public Pelican (bool isCarnivore, int age,
-            string species, int singingDb,
-            bool isCementMixer):
-            base(isCarnivore, age,species, singingDb)
+        public Pelican (bool isCarnivore, int age, string species, int singingDb,bool isCementMixer):base(isCarnivore, age,species, singingDb)
         {
             IsCementMixer = isCementMixer;
+        }
+        public override string Stats()
+        {
+            return base.Stats() + "\n How fast it mix:" + IsCementMixer;
         }
     }
 }

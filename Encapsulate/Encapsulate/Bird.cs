@@ -12,11 +12,13 @@ namespace Encapsulate
 
         public Bird():base() { }
 
-        public Bird (bool isCarnivore, int age,
-            string species, int singingDb ) :
-            base(isCarnivore, age, species)
+        public Bird (bool isCarnivore, int age,string species, int singingDb ) : base(isCarnivore, age, species)
         {
             SingingDb = singingDb;
+        }
+        public override string Stats()
+        {
+            return base.Stats()+"\nSingingDb:" + SingingDb;
         }
     }
 }

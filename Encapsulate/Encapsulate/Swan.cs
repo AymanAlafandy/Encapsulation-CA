@@ -18,5 +18,9 @@ namespace Encapsulate
         {
             LevelOfRage = levelOfRage;
         }
+        public override string Stats()
+        {
+            return base.Stats() + "\nwhat's its color:" + LevelOfRage;
+        }
     }
 }
