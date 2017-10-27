@@ -17,5 +17,10 @@ namespace Encapsulate
         {
             NrOfLifePartners = nrOfLifePartners;
         }
+        public override string Stats()
+        {
+            return base.Stats() + "\nAmount of life partners:" +
+                NrOfLifePartners;
+        }
     }
 }

@@ -17,5 +17,9 @@ namespace Encapsulate
         {
             IsCementMixer = isCementMixer;
         }
+        public override string Stats()
+        {
+            return base.Stats() + "\nIs being used as a cementmixer:" + IsCementMixer;
+        }
     }
 }
