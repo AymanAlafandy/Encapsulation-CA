@@ -25,7 +25,6 @@ namespace Encapsulate
                 Console.WriteLine(ph.PrintPerson(p));
             }
             Console.ReadLine();
-
         }
     }
 }
