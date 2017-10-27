@@ -25,6 +25,21 @@ namespace Encapsulate
                 Console.WriteLine(ph.PrintPerson(p));
             }
             Console.ReadLine();
+            Console.Clear();
+            List<Animal> animals = new List<Animal>();
+            Horse horsy = new Horse(true, 30, "Devil Horse", true);
+            Dog dogy = new Dog(false, 4, "Doper-man", 0);
+            Pelican pely = new Pelican(true, 10, "flappy-big-mouth", 120, true);
+            Swan rageMonster = new Swan(true, 9000000, "white-hot-rage", 300, 239);
+            animals.Add(horsy);
+            animals.Add(dogy);
+            animals.Add(pely);
+            animals.Add(rageMonster);
+            foreach(Animal a in animals)
+            {
+                Console.WriteLine(a.Stats());
+            }
+            Console.ReadLine();
         }
     }
 }
