@@ -38,6 +38,7 @@ namespace Encapsulate
             animals.Add(rageMonster);
             foreach (Animal  a in animals)
             {
+
                 // Console.WriteLine(a.Stats());
                 Console.WriteLine(a.GetType().Name);
                 
