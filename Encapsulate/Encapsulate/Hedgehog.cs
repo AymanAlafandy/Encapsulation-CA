@@ -18,5 +18,10 @@ namespace Encapsulate
         {
             NrOfRings = nrOfRings;
         }
+
+        public override string stats()
+        {
+            return base.stats() + "\n Number of rings:" + NrOfRings;
+        }
     }
 }

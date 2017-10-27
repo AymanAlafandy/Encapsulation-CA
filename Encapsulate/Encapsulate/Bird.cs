@@ -18,5 +18,11 @@ namespace Encapsulate
         {
             SingingDb = singingDb;
         }
+        public override string stats()
+        {
+            return base.stats() + "\n Singing Decibell:" + SingingDb;
+        }
+
+
     }
 }
