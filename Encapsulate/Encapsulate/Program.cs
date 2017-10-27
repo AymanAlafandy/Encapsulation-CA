@@ -10,7 +10,7 @@ namespace Encapsulate
     {
         static void Main(string[] args)
         {
-            PersonHandler ph = new PersonHandler();
+            PersonHandler ph = new PersonHandler(); 
             List<Person> personList = new List<Person>();
 
             personList.Add(ph.CreatePerson(18, "Billy", "Ceasar", 170, 280));
