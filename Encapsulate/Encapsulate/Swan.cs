@@ -18,5 +18,9 @@ namespace Encapsulate
         {
             LevelOfRage = levelOfRage;
         }
+        public override string stats()
+        {
+            return base.stats() + "\nLevel of rage: " + LevelOfRage;
+        }
     }
 }

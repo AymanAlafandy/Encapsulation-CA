@@ -17,5 +17,9 @@ namespace Encapsulate
         {
             IsCementMixer = isCementMixer;
         }
+        public override string stats()
+        {
+            return base.stats()+"\nIs a cement mixer: " + IsCementMixer;
+        }
     }
 }

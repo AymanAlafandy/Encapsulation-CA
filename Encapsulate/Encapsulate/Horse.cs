@@ -18,6 +18,9 @@ namespace Encapsulate
         {
             IsFireBreathing = isFireBreathing;
         }
-
+        public override string stats()
+        {
+            return base.stats() +"\nIs firebreathing: " + IsFireBreathing;
+        }
     }
 }

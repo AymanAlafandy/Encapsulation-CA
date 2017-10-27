@@ -25,7 +25,48 @@ namespace Encapsulate
                 Console.WriteLine(ph.PrintPerson(p));
             }
             Console.ReadLine();
-
+            Console.Clear();
+            List<Animal> animals = new List<Animal>();
+            Horse horsy = new Horse(true, 3000, "Devil Horse", true);
+            Dog dogy = new Dog(false, 4, "Dopper-man", 10);
+            Pelican peli = new Pelican(false, 10, "flappy-bird", 120, true);
+            Swan rageMonster = new Swan(true, 9000, "RageComic", 200, 9000);
+            animals.Add(horsy);
+            animals.Add(dogy);
+            animals.Add(peli);
+            animals.Add(rageMonster);
+            foreach (Animal a in animals)
+            {
+                Console.WriteLine(a.GetType().Name);
+            }
+            Console.ReadKey();
+            Console.Clear();
+            List<Dog> dogs = new List<Dog>();
+            Dog dogy2 = new Dog(true, 12, "Wulf", 10);
+            Dog dogy3 = new Dog(false, 4, "Veggie", 0);
+            dogs.Add(dogy);
+            dogs.Add(dogy2);
+            dogs.Add(dogy3);
+            animals.Add(dogy3);
+            foreach (Animal a in animals)
+            {
+                Console.WriteLine(a.stats());
+            }
+            Console.ReadKey();
+            Console.Clear();
+            foreach (Animal a in animals)
+            { if(a.GetType().Name == "Dog") 
+                Console.WriteLine(a.stats());
+            }
+            Console.ReadKey();
+            Console.Clear();
+            foreach (Animal a in animals)
+            {
+                if (a.GetType().Name == "Dog")
+                    Console.WriteLine((a.stats()+ "\n" +((Dog)a).Speak()));
+            }
+            Console.ReadKey();
+            Console.Clear();
         }
     }
 }

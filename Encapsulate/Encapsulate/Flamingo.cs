@@ -17,5 +17,9 @@ namespace Encapsulate
         {
             NrOfLifePartners = nrOfLifePartners;
         }
+        public override string stats()
+        {
+            return base.stats()+"\nLifePartners: " + NrOfLifePartners;
+        }
     }
 }
