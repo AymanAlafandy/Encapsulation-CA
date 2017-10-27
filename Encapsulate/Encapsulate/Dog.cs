@@ -12,10 +12,21 @@ namespace Encapsulate
 
         public Dog() : base() { }
         public Dog(bool isCarnivore, int age,
-            string species, int tailWagsPerSecond):
+            string species, int tailWagsPerSecond) :
             base(isCarnivore, age, species)
         {
             TailWagsPerSecond = tailWagsPerSecond;
         }
+        public override string Stats()
+        {
+            return base.Stats() + "\nTailwags per second: " + TailWagsPerSecond;
+        }
+
+        //3.3.12 
+        public string Speak()
+        {
+            return "Woff!";
+        }
+
     }
 }

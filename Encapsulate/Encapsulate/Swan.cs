@@ -8,7 +8,7 @@ namespace Encapsulate
 {
     public class Swan:Bird
     {
-        public int LevelOfRage { get; set; }
+        public int LevelOfRage {get; set; }
 
         public Swan() : base() { }
         public Swan(bool isCarnivore, int age,
@@ -18,5 +18,11 @@ namespace Encapsulate
         {
             LevelOfRage = levelOfRage;
         }
+        public override string Stats()
+        {
+            return base.Stats() + "\nOn a scale from 1 to 10, how angry is it?: " + LevelOfRage;
+        }
+
+
     }
 }
