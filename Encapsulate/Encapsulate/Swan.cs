@@ -18,5 +18,12 @@ namespace Encapsulate
         {
             LevelOfRage = levelOfRage;
         }
+        public override string Stats()
+        {
+            return base.Stats() + "Is Carnivore:" + IsCarnivore +
+                "\nAge: " + Age +
+                "\nLevelOfRage" + LevelOfRage;
+
+        }
     }
 }

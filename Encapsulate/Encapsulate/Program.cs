@@ -25,6 +25,66 @@ namespace Encapsulate
                 Console.WriteLine(ph.PrintPerson(p));
             }
             Console.ReadLine();
+            Console.Clear();
+
+            List<Animal> animals = new List<Animal>();
+            //Horse horsey = new Horse(true, 111, "Hor",true);
+            
+            Dog dogy = new Dog(false, 4, "Dpper man,0",23);
+            Pelican pelicany = new Pelican(false, 11, "pel", 113, true);
+            animals.Add(dogy);
+            animals.Add(pelicany);
+
+            foreach (Animal a in animals)
+            {
+                //Console.WriteLine(a.Stats());
+                Console.WriteLine(a.GetType().Name);
+
+            }
+
+
+            Console.ReadLine();
+            List<Dog> dogs = new List<Dog>();
+            Dog dogy2 = new Dog(true, 10, " gogo ", 13432);
+            Dog dogy3 = new Dog(false, 11, " gogojhgfd ", 1);
+            Dog dogy4 = new Dog(true, 10, " fofo ", 12);
+
+            dogs.Add(dogy2);
+            dogs.Add(dogy3);
+            dogs.Add(dogy4);
+            animals.Add(dogy4);
+
+            foreach (Animal a in animals)
+            {
+                Console.WriteLine(a.Stats());
+
+            }
+            Console.ReadLine();
+            Console.Clear();
+
+            foreach (Animal a in animals.OfType<Dog>())
+            {
+               
+                    Console.WriteLine(a.Stats()+"\n" + ((Dog)) );           
+
+            }
+            Console.ReadLine();
+            Console.Clear();
+
+            foreach (Animal a in animals)
+            {
+                if (a.GetType().Name == "Dog")
+                {
+                    Console.WriteLine(a.Stats()+"\n"+((Dog)a).Speak()+"\n");
+                }
+                else
+                {
+                    Console.WriteLine(a.Stats() );    
+                }
+
+            }
+            Console.ReadLine();
+            Console.Clear();
 
         }
     }

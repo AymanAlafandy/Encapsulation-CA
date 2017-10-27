@@ -18,5 +18,12 @@ namespace Encapsulate
         {
             SingingDb = singingDb;
         }
+        public override string Stats()
+        {
+            return base.Stats() +"Is Carnivore:" + IsCarnivore +
+                "\nAge: " + Age +
+                "\nSingingDb" + SingingDb;
+
+        }
     }
 }

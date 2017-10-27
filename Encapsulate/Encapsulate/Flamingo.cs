@@ -17,5 +17,12 @@ namespace Encapsulate
         {
             NrOfLifePartners = nrOfLifePartners;
         }
+        public override string Stats()
+        {
+            return base.Stats() + "Is Carnivore:" + IsCarnivore +
+                "\nAge: " + Age +
+                "\nNrOfLifePartners" + NrOfLifePartners;
+
+        }
     }
 }
