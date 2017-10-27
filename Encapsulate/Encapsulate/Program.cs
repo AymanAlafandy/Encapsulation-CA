@@ -63,7 +63,7 @@ namespace Encapsulate
             dogs.Add(doggy2);
             dogs.Add(doggy3);
 
-            foreach (Animal a in animals)
+            foreach (Animal a in animals.OfType<Dog>())
             {
                 if(a.GetType().Name== "Dog")
                 Console.WriteLine(a.Stats());
@@ -73,7 +73,14 @@ namespace Encapsulate
             foreach (Animal a in animals)
             {
                 if (a.GetType().Name == "Dog")
-                    Console.WriteLine(((Dog)a).speak());
+                    Console.WriteLine(a.Stats()+"\n"
+                        +((Dog)a).speak());
+
+                else
+                {
+
+                    Console.WriteLine(a.Stats());
+                }
             }
             Console.ReadLine();
         }
