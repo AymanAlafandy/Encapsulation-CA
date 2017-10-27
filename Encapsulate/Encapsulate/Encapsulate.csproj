@@ -43,11 +43,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="inheritance\Animal.cs" />
-    <Compile Include="Bird.cs" />
-    <Compile Include="Dog.cs" />
-    <Compile Include="Flamingo.cs" />
-    <Compile Include="Hedgehog.cs" />
-    <Compile Include="Horse.cs" />
     <Compile Include="inheritance\Bird.cs" />
     <Compile Include="inheritance\Dog.cs" />
     <Compile Include="inheritance\Flamingo.cs" />
@@ -56,12 +51,10 @@
     <Compile Include="inheritance\Pelican.cs" />
     <Compile Include="inheritance\Swan.cs" />
     <Compile Include="NumericInputError.cs" />
-    <Compile Include="Pelican.cs" />
     <Compile Include="Person.cs" />
     <Compile Include="PersonHandler.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Swan.cs" />
     <Compile Include="TextInputError.cs" />
     <Compile Include="UserError.cs" />
   </ItemGroup>
