@@ -19,7 +19,11 @@ namespace Encapsulate
         }
         public override string Stats()
         {
-            return base.Stats() + "\nTail wangs per second:" + TailWagsPerSecond;
+            return base.Stats() + "Tail wangs per second:" + TailWagsPerSecond;
+        }
+        public string Speak()
+        {
+            return "Woff!";
         }
     }
 }

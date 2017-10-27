@@ -37,9 +37,49 @@ namespace Encapsulate
             animals.Add(rageMonster);
             foreach(Animal a in animals)
             {
+                Console.WriteLine(a.GetType().Name);
+            }
+            Console.ReadLine();
+            Console.Clear();
+            List<Dog> dogs = new List<Dog>();
+            Dog dog2 = new Dog(true, 12, "Wulf", 10);
+            Dog dog3 = new Dog(false, 7, "Poddle", 3);
+            dogs.Add(dogy);
+            dogs.Add(dog2);
+            dogs.Add(dog3);
+            foreach(Animal a in animals)
+            {
                 Console.WriteLine(a.Stats());
             }
             Console.ReadLine();
+            Console.Clear();
+            //11
+            foreach (Animal a in animals)
+            {
+                if (a.GetType().Name == "Dog")
+                {
+                    Console.WriteLine(a.Stats());
+                }
+                
+            }
+            Console.ReadLine();
+            Console.Clear();
+
+            foreach (Animal a in animals)
+            {
+                if (a.GetType().Name == "Dog")
+                {
+                    Console.WriteLine(a.Stats()+"\n"+((Dog)a).Speak()+"\n"); //soft cust
+                }
+                 else
+                {
+                    Console.WriteLine(a.Stats());
+                }
+            }
+            Console.ReadLine();
+            Console.Clear();
+
+
         }
     }
 }
