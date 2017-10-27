@@ -23,6 +23,7 @@ namespace Encapsulate
             foreach (Person p in personList)
             {
                 Console.WriteLine(ph.PrintPerson(p));
+
             }
             Console.ReadLine();
             Console.Clear();
