@@ -18,6 +18,12 @@ namespace Encapsulate
         {
             IsFireBreathing = isFireBreathing;
         }
+        public override string Stats()
+        {
+            return base.Stats() + "\n Is fire breathing" +
+                IsFireBreathing;
+        }
+
 
     }
 }
