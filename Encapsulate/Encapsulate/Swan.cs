@@ -16,6 +16,7 @@ namespace Encapsulate
             int levelOfRage):
             base(isCarnivore,age,species,singingDb)
         {
+
             LevelOfRage = levelOfRage;
         }
     }
