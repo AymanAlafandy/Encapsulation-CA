@@ -42,12 +42,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Animal.cs" />
-    <Compile Include="Bird.cs" />
-    <Compile Include="Dog.cs" />
+    <Compile Include="Animals\Animal.cs" />
+    <Compile Include="Animals\Bird.cs" />
+    <Compile Include="CUserError.cs" />
+    <Compile Include="Animals\Dog.cs" />
     <Compile Include="Flamingo.cs" />
     <Compile Include="Hedgehog.cs" />
-    <Compile Include="Horse.cs" />
+    <Compile Include="Animals\Horse.cs" />
+    <Compile Include="NumericInputError.cs" />
     <Compile Include="Pelican.cs" />
     <Compile Include="Person.cs" />
     <Compile Include="PersonHandler.cs" />
@@ -58,5 +60,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
