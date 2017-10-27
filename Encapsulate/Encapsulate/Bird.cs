@@ -14,7 +14,7 @@ namespace Encapsulate
         public Bird() : base() { }
 
         public Bird ( bool isCarnivore, int age,string species, int singingDb) :
-            base (isCarnivore, age, species)
+            base (isCarnivore, age, species) //this order of fields is important
         {
             SingingDb = singingDb;
         }
