@@ -75,6 +75,9 @@ namespace Encapsulate
                 {
                     Console.WriteLine(a.Stats());
                 }
+                //or simply write
+                //foreach(Animal a in animals.OfType<Dog>){console.writeline(a.Stats())}  more recommanded
+                //it is for the 14 question
             }
             Console.ReadLine();
             Console.Clear();
