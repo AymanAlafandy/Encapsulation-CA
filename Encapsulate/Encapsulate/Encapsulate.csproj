@@ -42,21 +42,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Animal.cs" />
-    <Compile Include="Bird.cs" />
-    <Compile Include="Dog.cs" />
-    <Compile Include="Flamingo.cs" />
-    <Compile Include="Hedgehog.cs" />
-    <Compile Include="Horse.cs" />
-    <Compile Include="Pelican.cs" />
+    <Compile Include="Inheritance.cs\Animal.cs" />
+    <Compile Include="Inheritance.cs\Bird.cs" />
+    <Compile Include="Inheritance.cs\Dog.cs" />
+    <Compile Include="Inheritance.cs\Flamingo.cs" />
+    <Compile Include="Inheritance.cs\Hedgehog.cs" />
+    <Compile Include="Inheritance.cs\Horse.cs" />
+    <Compile Include="NumericInputError.cs" />
+    <Compile Include="Inheritance.cs\Pelican.cs" />
     <Compile Include="Person.cs" />
     <Compile Include="PersonHandler.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Swan.cs" />
+    <Compile Include="Inheritance.cs\Swan.cs" />
+    <Compile Include="TextInputError.cs" />
+    <Compile Include="UserError.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

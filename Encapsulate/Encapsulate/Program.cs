@@ -79,6 +79,26 @@ namespace Encapsulate
             }
             Console.ReadLine();
             Console.Clear();
+
+
+            //****POLYMORPHISM PART-2
+
+            List<UserError> ue = new List<UserError>();
+            ue.Add(new TextInputError());
+            ue.Add(new NumericInputError());
+            ue.Add(new TextInputError());
+            ue.Add(new NumericInputError());
+            ue.Add(new TextInputError());
+            foreach (UserError error in ue)
+            {
+                Console.WriteLine(error.UeMessage());
+            }
+            Console.ReadLine();
+
+
+
+
+
         }
     }
 }
