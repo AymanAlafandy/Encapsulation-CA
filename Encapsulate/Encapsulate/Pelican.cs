@@ -10,7 +10,7 @@ namespace Encapsulate
     {
         public bool IsCementMixer { get; set; }
 
-        public Pelican():Base() { }
+        public Pelican() : base() { }
 
         public Pelican(bool isCarnivore, int age, string species, int singingDb, bool isCementMixer):
             base(isCarnivore, age, species, singingDb)

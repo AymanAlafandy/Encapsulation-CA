@@ -10,7 +10,7 @@ namespace Encapsulate
     {
         public int LevelOfRage { get; set; }
 
-        public Swan() : Base() { }
+        public Swan() : base() { }
         public Swan(bool isCarnivore, int age, 
             string species, int singingDb, 
             int levelOfRage):

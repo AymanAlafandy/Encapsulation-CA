@@ -10,7 +10,7 @@ namespace Encapsulate
     {
         public int NrOfRings { get; set; }
 
-        
+        public Hedgehog() : base() { }
 
         public Hedgehog(bool isCarnivore, int age, 
             string species, int nrOfRings) :
