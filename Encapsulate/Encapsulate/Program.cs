@@ -79,6 +79,19 @@ namespace Encapsulate
             }
             Console.ReadLine();
             Console.Clear();
-        }
+
+
+            List<Usererror> ue = new List<Usererror>();
+            ue.Add(new TextInputError());
+            ue.Add(new Numericputerror());
+            ue.Add(new TextInputError());
+            ue.Add(new Numericputerror());
+            ue.Add(new TextInputError());
+            foreach(Usererror error in ue)
+            {
+                Console.WriteLine(error.UEMessage());
+            }
+            Console.ReadLine();
+        }      
     }
 }
