@@ -45,6 +45,9 @@
     <Compile Include="Animal.cs" />
     <Compile Include="Bird.cs" />
     <Compile Include="Dog.cs" />
+    <Compile Include="Swan.cs" />
+    <Compile Include="Pelican.cs" />
+    <Compile Include="Flamingo.cs" />
     <Compile Include="Hedgehog.cs" />
     <Compile Include="Horse.cs" />
     <Compile Include="Person.cs" />
