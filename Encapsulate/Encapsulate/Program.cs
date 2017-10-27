@@ -21,6 +21,18 @@ namespace Encapsulate
             {
                 Console.WriteLine(ph.PrintPerson(p));
             }
+            List<UserError> ue = new List<UserError>();
+            ue.Add(new TextInPutError());
+            ue.Add(new NumericInputError());
+            ue.Add(new TextInPutError());
+            ue.Add(new NumericInputError());
+            ue.Add(new TextInPutError());
+            ue.Add(new NumericInputError());
+            foreach(UserError error in ue)
+            {
+                Console.WriteLine(error.UEMessage());
+            }
+
         }
     }
 }

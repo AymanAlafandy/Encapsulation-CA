@@ -9,7 +9,7 @@ namespace Encapsulate
    public class Bird : Animal
     {
         public int SingingDB { get; set; }
-        public Bird() { }
+        public Bird() { } 
         public Bird(bool carnivore, int age, string species, bool singingDB) : base (carnivore,age,species)
         {
             SingingDB = SingingDB;
