@@ -20,5 +20,10 @@ namespace Encapsulate
             Age = age;
             Species = species;
         }
+        public virtual string Stats()
+        {
+            return "\n Species: " + Species +"\n IsCarnivore: " + IsCarnivore + "\n Age: " + Age ;
+        }
+
     }
 }

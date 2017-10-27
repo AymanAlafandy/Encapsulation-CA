@@ -18,5 +18,10 @@ namespace Encapsulate
         {
             LevelOfRage = levelOfRage;
         }
+        public override string Stats()
+        {
+            return base.Stats() + "\n LevelOfRage:" + LevelOfRage;
+        }
+
     }
 }
