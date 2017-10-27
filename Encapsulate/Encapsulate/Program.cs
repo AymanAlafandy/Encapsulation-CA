@@ -80,6 +80,7 @@ namespace Encapsulate
                 {
 
                     Console.WriteLine(a.Stats());
+
                 }
             }
             Console.ReadLine();
