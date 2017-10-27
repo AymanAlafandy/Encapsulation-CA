@@ -24,4 +24,5 @@ namespace Encapsulate
                 SingingDb;
         }
     }
+
 }
