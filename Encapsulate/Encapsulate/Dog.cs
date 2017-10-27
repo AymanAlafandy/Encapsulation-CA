@@ -17,5 +17,15 @@ namespace Encapsulate
         {
             TailWagsPerSecond = tailWagsPerSecond;
         }
+
+        public override string Stats()
+        {
+            return base.Stats() + "\n Tails wags per second" + TailWagsPerSecond;
+        }
+
+        public string Speak()
+        {
+            return "Woff!";
+        }
     }
 }

@@ -19,5 +19,9 @@ namespace Encapsulate
             IsFireBreathing = isFireBreathing;
         }
 
+        public override string Stats()
+        {
+            return base.Stats() + "\nTails wags/sec:" + IsFireBreathing;
+        }
     }
 }
