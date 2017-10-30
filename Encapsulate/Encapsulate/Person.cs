@@ -25,5 +25,6 @@ namespace Encapsulate
         public double Weight { get { return weight; }
             set { weight = value; } }
 
+
     }
 }
